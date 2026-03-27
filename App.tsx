@@ -1,45 +1,38 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React from 'react'
+import { Button, StyleSheet, Text, View } from "react-native";
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
+const App = () => {
   return (
     <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
+      <Text style={styles.heading}>Hello</Text>
+      <Text style={styles.title}>I am Murad</Text>
+      <Text style={styles.description}>This is my first React Native app</Text>
+      <Button title="Press me" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    padding: 20,
+    backgroundColor: "#000000",
+    minHeight: "100%"
   },
-});
+  heading: {
+    fontSize: 35,
+    color: "#fff",
+    fontWeight: '700',
+  },
+  title: {
+    fontSize: 20,
+    color: "powderblue",
+    fontWeight: '500'
+  },
+  description: {
+    fontSize: 16,
+    color: "#fff923"
+  },
+})
 
 export default App;
