@@ -2,6 +2,7 @@ import React from 'react'
 import { Alert, Button, StyleSheet, Text, View } from "react-native";
 import UserData from './components/UserData';
 import State from './components/State';
+import Input from './components/Input';
 
 
 const App = () => {
@@ -22,6 +23,9 @@ const App = () => {
 
       {/* state */}
       <State/>
+
+      {/* input field */}
+      <Input/>
     </View>
   )
 }
