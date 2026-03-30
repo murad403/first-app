@@ -7,10 +7,11 @@ import Form from './components/Form';
 import FlateList from './components/FlateList';
 import Grid from './components/Grid';
 import SectionListComponent from './components/SectionList';
+import Form2 from './components/Form2';
 
 
 const App = () => {
-  const AddItem = () =>{
+  const AddItem = () => {
     Alert.alert("Item Added", "A new item has been added.");
   }
   return (
@@ -24,9 +25,9 @@ const App = () => {
       <Text style={styles.description}>This is my first React Native app</Text>
 
 
-      <Button title="Press me" accessibilityLabel='item add' color={"blue"} onPress={AddItem}/>
+      <Button title="Press me" accessibilityLabel='item add' color={"blue"} onPress={AddItem} />
 
-      <UserData/>
+      {/* <UserData /> */}
 
 
       {/* state */}
@@ -45,7 +46,10 @@ const App = () => {
       {/* <Grid/> */}
 
       {/* section list */}
-      <SectionListComponent/>
+      {/* <SectionListComponent/> */}
+
+      {/* controller react hooks form */}
+      <Form2 />
     </ScrollView>
   )
 }
