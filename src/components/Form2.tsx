@@ -8,7 +8,7 @@ type TFormData = {
 }
 
 const Form2 = () => {
-    const { control, handleSubmit } = useForm();
+    const { control, handleSubmit } = useForm<TFormData>();
     const onSubmit = (data: TFormData) => {
         console.warn(data);
     };
