@@ -1,13 +1,5 @@
 import React from 'react'
 import { Alert, Button, ScrollView, StyleSheet, Text } from "react-native";
-import UserData from './components/UserData';
-import State from './components/State';
-import Input from './components/Input';
-import Form from './components/Form';
-import FlateList from './components/FlateList';
-import Grid from './components/Grid';
-import SectionListComponent from './components/SectionList';
-import Form2 from './components/Form2';
 
 
 const App = () => {
@@ -48,8 +40,8 @@ const App = () => {
       {/* section list */}
       {/* <SectionListComponent/> */}
 
-      {/* controller react hooks form */}
-      <Form2 />
+      {/* most import unmount or timer */}
+      {/* <Timer /> */}
     </ScrollView>
   )
 }
